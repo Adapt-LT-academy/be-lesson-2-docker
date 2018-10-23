@@ -9,6 +9,7 @@ pause(){
 clear
 echo "Lets use our previous project \"my-project\" for this..."
 cd ./../03.basic-project-setup/my-project
+ls -alg
 pause
 
 clear
@@ -25,6 +26,13 @@ pause
 pause
 
 clear
+echo "Our project structure with added files:"
+pause
+clear
+ls -alg
+pause
+
+clear
 echo "Lets see the contents of our Makefile:"
 pause
 clear
@@ -36,6 +44,18 @@ echo "Contents of Commands file (docker.mk)"
 pause
 clear
 cat docker.mk
+pause
+
+clear
+echo "Lets see if Commands work with our previous project \"my-project\"..."
+echo
+echo "COMMAND:"
+echo
+echo "make up"
+pause
+
+clear
+make up
 pause
 
 clear
@@ -58,3 +78,4 @@ pause
 
 clear
 echo "Lets run our command now..."
+
