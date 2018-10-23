@@ -6,6 +6,7 @@ pause(){
     echo;
 }
 
+clear
 echo "Install Docker:"
 echo
 echo "COMMANDS:"

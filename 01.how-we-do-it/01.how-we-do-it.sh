@@ -68,7 +68,6 @@ pause
 clear
 cat .env.docker4php >> .env &&
 cat .env.dist >> .env
-pause
 
 clear
 echo "Check contents of .env file:"
