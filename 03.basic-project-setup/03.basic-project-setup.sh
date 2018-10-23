@@ -46,7 +46,8 @@ pause
 
 clear
 echo "Open Project in browser:" &&
-firefox --new-window http://php.docker.localhost:8000;
+firefox --new-window http://php.docker.localhost:8000
+pause
 
 clear
 echo "Stop Docker implementation"

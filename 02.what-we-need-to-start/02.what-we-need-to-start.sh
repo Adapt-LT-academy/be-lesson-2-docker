@@ -92,6 +92,7 @@ echo "COMMAND:"
 echo "php --version"
 pause
 php --version
+pause
 
 clear
 echo "Install Composer"
@@ -99,6 +100,7 @@ echo
 echo "curl -sS https://getcomposer.org/installer -o composer-setup.php"
 echo "sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer"
 pause
+clear
 {
   cd ~ &&
   curl -sS https://getcomposer.org/installer -o composer-setup.php &&

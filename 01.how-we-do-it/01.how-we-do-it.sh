@@ -72,6 +72,8 @@ pause
 
 clear
 echo "Check contents of .env file:"
+pause
+clear
 cat .env
 pause
 
@@ -97,7 +99,8 @@ pause
 
 clear
 echo "Contents of docker.mk :"
-echo
+pause
+clear
 cat docker.mk
 pause
 
