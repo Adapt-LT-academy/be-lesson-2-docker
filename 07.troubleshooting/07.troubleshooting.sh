@@ -42,3 +42,4 @@ pause
 docker network ls
 pause
 
+docker stop $(docker ps -aq) > /dev/null
