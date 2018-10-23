@@ -78,4 +78,6 @@ pause
 
 clear
 echo "Lets run our command now..."
-
+echo
+make destroy
+pause
