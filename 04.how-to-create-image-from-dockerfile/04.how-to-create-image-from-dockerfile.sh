@@ -54,6 +54,8 @@ pause
 
 docker run -p 8001:80 irmantasp/apache:1.0
 pause
+firefox --new-window http://localhost:8001;
+pause
 
 clear
 echo "Try our NGINX image as single container:"
@@ -64,6 +66,8 @@ echo "docker run -p 8002:80 irmantasp/nginx:1.0"
 pause
 
 docker run -p 8002:80 irmantasp/nginx:1.0
+pause
+firefox --new-window http://localhost:8002;
 pause
 
 docker stop $(docker ps -aq) > /dev/null
