@@ -32,6 +32,10 @@ echo "docker-compose up -d"
 pause
 docker-compose up -d
 pause
+firefox --new-window http://localhost:8001;
+pause
+firefox --new-window http://localhost:8002;
+pause
 
 clear
 echo "Lets add our index.html files for each container:"
