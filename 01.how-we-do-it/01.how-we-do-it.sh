@@ -88,7 +88,7 @@ pause
 
 clear
 echo "Open project in browser:" &&
-firefox --new-window http://botman.docker.localhost >  /dev/null &&
+firefox --new-window http://botman.docker.localhost &>  /dev/null &&
 pause
 
 clear

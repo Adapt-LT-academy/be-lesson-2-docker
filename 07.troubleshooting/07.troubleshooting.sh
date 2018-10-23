@@ -11,7 +11,7 @@ echo "Lets start our previous project \"my-project\" for this again..."
 echo
 echo "... if it's not running..."
 cd ./../03.basic-project-setup/my-project
-docker-compose up -d
+make up
 pause
 
 clear
@@ -42,4 +42,4 @@ pause
 docker network ls
 pause
 
-docker stop $(docker ps -aq) > /dev/null
+docker stop $(docker ps -aq) &> /dev/null

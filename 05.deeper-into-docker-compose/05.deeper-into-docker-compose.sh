@@ -75,4 +75,4 @@ pause
 firefox --new-window http://nginx.lesson.docker.localhost;
 pause
 
-docker stop $(docker ps -aq) > /dev/null
+docker stop $(docker ps -aq) &> /dev/null

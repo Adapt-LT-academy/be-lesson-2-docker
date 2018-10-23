@@ -70,4 +70,4 @@ pause
 firefox --new-window http://localhost:8002;
 pause
 
-docker stop $(docker ps -aq) > /dev/null
+docker stop $(docker ps -aq) &> /dev/null
