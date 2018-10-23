@@ -2,7 +2,7 @@ version: "3"
 
 services:
   apache:
-    image: irmantasp/apache:1.0
+    image: adapt-academy/apache:1.0
     container_name: academy_apache
     volumes:
       - ./apache:/var/www/html
@@ -12,7 +12,7 @@ services:
       - 'traefik.frontend.rule=Host:apache.lesson.docker.localhost'
 
   nginx:
-    image: irmantasp/nginx:1.0
+    image: adapt-academy/nginx:1.0
     container_name: academy_nginx
     volumes:
       - ./nginx:/var/www/html
