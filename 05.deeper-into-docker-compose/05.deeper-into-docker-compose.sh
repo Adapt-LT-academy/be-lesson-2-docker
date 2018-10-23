@@ -8,10 +8,10 @@ pause(){
 
 clear
 echo "Contents of our index files for our previously created containers:"
-echo
+clear
+pause
 cat ./apache/index.html
-echo
-echo
+clear
 cat ./nginx/index.html
 pause
 
