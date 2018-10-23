@@ -79,5 +79,8 @@ pause
 clear
 echo "Lets run our command now..."
 echo
+echo "COMMAND:"
+echo "make destroy"
+echo
 make destroy
 pause
