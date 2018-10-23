@@ -33,7 +33,7 @@ pause
 docker-compose up -d
 pause
 firefox --private-window http://localhost:8001;
-pause
+clear
 firefox --private-window http://localhost:8002;
 pause
 
@@ -42,10 +42,6 @@ echo "Lets add our index.html files for each container:"
 pause
 clear
 cat ./docker-compose.secondary.yml
-pause
-firefox --private-window http://localhost:8001;
-pause
-firefox --private-window http://localhost:8002;
 pause
 
 clear
@@ -58,7 +54,7 @@ pause
 docker-compose -f docker-compose.secondary.yml up -d
 pause
 firefox --private-window http://localhost:8001;
-pause
+clear
 firefox --private-window http://localhost:8002;
 pause
 
@@ -79,7 +75,7 @@ pause
 docker-compose -f docker-compose.third.yml up -d
 pause
 firefox --private-window http://apache.lesson.docker.localhost;
-pause
+clear
 firefox --private-window http://nginx.lesson.docker.localhost;
 pause
 
