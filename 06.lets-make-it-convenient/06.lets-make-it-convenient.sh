@@ -56,7 +56,7 @@ pause
 
 clear
 make up
-pause
+firefox --private-window http://php.docker.localhost:8000
 
 clear
 echo "Lets add new command:"
