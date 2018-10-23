@@ -32,7 +32,9 @@ echo "docker-compose up -d"
 pause
 docker-compose up -d
 pause
-firefox --new-tab http://localhost:8001 --new-tab http://localhost:8002
+firefox --new-window http://localhost:8001;
+pause
+firefox --new-window http://localhost:8002;
 pause
 
 clear
@@ -41,7 +43,9 @@ pause
 clear
 cat ./docker-compose.secondary.yml
 pause
-firefox --new-tab http://localhost:8001 --new-tab http://localhost:8002;
+firefox --new-window http://localhost:8001;
+pause
+firefox --new-window http://localhost:8002;
 pause
 
 clear
@@ -53,7 +57,9 @@ echo "docker-compose  -f docker-compose.secondary.yml up -d"
 pause
 docker-compose -f docker-compose.secondary.yml up -d
 pause
-firefox --new-tab http://localhost:8001 --new-tab http://localhost:8002;
+firefox --new-window http://localhost:8001;
+pause
+firefox --new-window http://localhost:8002;
 pause
 
 clear
@@ -72,7 +78,9 @@ echo "docker-compose -f docker-compose.third.yml up -d"
 pause
 docker-compose -f docker-compose.third.yml up -d
 pause
-firefox --new-tab http://apache.lesson.docker.localhost --new-tab http://nginx.lesson.docker.localhost;
+firefox --new-window http://apache.lesson.docker.localhost;
+pause
+firefox --new-window http://nginx.lesson.docker.localhost;
 pause
 
 docker stop $(docker ps -aq) &> /dev/null
