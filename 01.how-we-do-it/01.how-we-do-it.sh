@@ -15,7 +15,7 @@ echo "git clone git@github.com:Adapt-LT-academy/improved-octo-giggle.git botman.
 pause
 
 clear
-git clone git@github.com:Adapt-LT-academy/improved-octo-giggle.git botman.docker.localhost
+git clone https://github.com/Adapt-LT-academy/improved-octo-giggle.git botman.docker.localhost
 pause
 
 clear
