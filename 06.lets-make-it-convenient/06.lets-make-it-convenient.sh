@@ -43,6 +43,13 @@ echo "Lets add new command:"
 echo
 echo "COMMAND:"
 echo "nano docker.mk"
+echo
+echo "EXAMPLE COMMAND:"
+echo "destroy"
+echo
+echo "WHAT IT SHOULD DO:"
+echo "make prune";
+echo "make ps"
 pause
 
 clear

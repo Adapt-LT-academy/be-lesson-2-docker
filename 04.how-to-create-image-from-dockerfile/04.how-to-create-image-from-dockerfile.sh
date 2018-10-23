@@ -54,7 +54,7 @@ pause
 
 docker run -d -p 8001:80 adapt-academy/apache:1.0
 pause
-firefox --new-window http://localhost:8001;
+firefox --private-window http://localhost:8001;
 pause
 
 clear
@@ -67,7 +67,7 @@ pause
 
 docker run -d -p 8002:80 adapt-academy/nginx:1.0
 pause
-firefox --new-window http://localhost:8002;
+firefox --private-window http://localhost:8002;
 pause
 
 docker stop $(docker ps -aq) &> /dev/null
