@@ -52,7 +52,7 @@ echo
 echo "docker run -p 8001:80 adapt-academy/apache:1.0"
 pause
 
-docker run -p 8001:80 adapt-academy/apache:1.0
+docker run -d -p 8001:80 adapt-academy/apache:1.0
 pause
 firefox --new-window http://localhost:8001;
 pause
@@ -65,7 +65,7 @@ echo
 echo "docker run -p 8002:80 adapt-academy/nginx:1.0"
 pause
 
-docker run -p 8002:80 adapt-academy/nginx:1.0
+docker run -d -p 8002:80 adapt-academy/nginx:1.0
 pause
 firefox --new-window http://localhost:8002;
 pause
