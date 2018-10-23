@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  apache:
+    image: irmantasp/apache:1.0
+    container_name: academy_apache
+    volumes:
+      - ./apache:/var/www/html
+    labels:
+      - 'traefik.backend=apache'
+      - 'traefik.port=80'
+      - 'traefik.frontend.rule=Host:apache.lesson.docker.localhost'
+
+  nginx:
+    image: irmantasp/nginx:1.0
+    container_name: academy_nginx
+    volumes:
+      - ./nginx:/var/www/html
+    labels:
+      - 'traefik.backend=nginx'
+      - 'traefik.port=80'
+      - 'traefik.frontend.rule=Host:nginx.lesson.docker.localhost'
+
+  traefik:
+    image: traefik
+    container_name: academy_traefik
+    command: -c /dev/null --web --docker --logLevel=INFO
+    ports:
+      - '80:80'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

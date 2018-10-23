@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  apache:
+    image: irmantasp/apache:1.0
+    container_name: academy_apache
+    volumes:
+      - ./apache:/var/www/html
+    ports:
+      - 8001:80
+
+  nginx:
+    image: irmantasp/nginx:1.0
+    container_name: academy_nginx
+    volumes:
+      - ./nginx:/var/www/html
+    ports:
+      - 8002:80
