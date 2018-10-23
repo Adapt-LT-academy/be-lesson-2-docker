@@ -35,7 +35,6 @@ pause
 firefox --private-window http://localhost:8001;
 clear
 firefox --private-window http://localhost:8002;
-pause
 
 clear
 echo "Lets add our index.html files for each container:"
@@ -56,7 +55,6 @@ pause
 firefox --private-window http://localhost:8001;
 clear
 firefox --private-window http://localhost:8002;
-pause
 
 clear
 echo "Lets add additional service which allows creation of local domains for containers:"
