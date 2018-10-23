@@ -21,7 +21,7 @@ pause
 {
   wget https://raw.githubusercontent.com/wodby/docker4php/master/Makefile &&
   wget https://raw.githubusercontent.com/wodby/docker4php/master/docker.mk
-} &> /dev/null
+}
 pause
 
 clear

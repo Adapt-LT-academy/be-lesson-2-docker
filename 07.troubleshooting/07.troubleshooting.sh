@@ -6,6 +6,8 @@ pause(){
     echo;
 }
 
+docker stop $(docker ps -aq) &> /dev/null
+
 clear
 echo "Lets start our previous project \"my-project\" for this again..."
 echo

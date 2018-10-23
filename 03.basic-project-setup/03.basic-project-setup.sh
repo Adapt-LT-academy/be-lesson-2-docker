@@ -32,7 +32,7 @@ pause
   wget https://raw.githubusercontent.com/wodby/docker4php/master/docker-compose.yml &&
   wget https://raw.githubusercontent.com/wodby/docker4php/master/.env -O .env.docker4php &&
   cat .env.docker4php >> .env
-} &> /dev/null
+}
 pause
 
 clear
